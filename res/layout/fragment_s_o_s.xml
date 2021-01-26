@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SOS"
+    android:id="@+id/sosLayout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/sos_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/teal_custom"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/azurin_blue"/>
+
+    <LinearLayout
+        android:id="@+id/sos_zone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clear_azur_blue"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <Button
+            android:id="@+id/declare_loss_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:background="@color/teal_700"
+            android:text="DECLARE LOST ANIMAL"
+            android:textSize="25sp"
+            app:backgroundTint="@color/teal_700" />
+
+        <TextView
+            android:id="@+id/lost_animals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="22sp"
+            android:text="Lost animals"
+            android:textColor="@color/marine_blue" />
+
+        <LinearLayout
+            android:id="@+id/lost_animals_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/azurin_blue">
+
+            <ListView
+                android:id="@+id/lost_animals_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

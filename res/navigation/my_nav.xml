@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/animalsFrag">
+
+    <fragment
+        android:id="@+id/animalsFrag"
+        android:name="hugo.stephan.pi2.myfragmentapp.Animals"
+        android:label="My Animals"
+        tools:layout="@layout/fragment_animals" />
+    <fragment
+        android:id="@+id/sosFrag"
+        android:name="hugo.stephan.pi2.myfragmentapp.SOS"
+        android:label="S.O.S"
+        tools:layout="@layout/fragment_s_o_s" />
+    <fragment
+        android:id="@+id/profileFrag"
+        android:name="hugo.stephan.pi2.myfragmentapp.Profile"
+        android:label="My Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/mapsFrag"
+        android:name="hugo.stephan.pi2.myfragmentapp.Maps"
+        android:label="Map"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/moreFrag"
+        android:name="hugo.stephan.pi2.myfragmentapp.More"
+        android:label="More"
+        tools:layout="@layout/fragment_more" />
+</navigation>

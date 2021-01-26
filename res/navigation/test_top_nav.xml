@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_top_nav"
+    app:startDestination="@id/topAnimalsFrag">
+
+    <fragment
+        android:id="@+id/topAddAnimalFrag"
+        android:name="hugo.stephan.pi2.myfragmentapp.AddAnimal"
+        android:label="fragment_add_animal"
+        tools:layout="@layout/fragment_add_animal" />
+    <fragment
+        android:id="@+id/topAnimalsFrag"
+        android:name="hugo.stephan.pi2.myfragmentapp.Animals"
+        android:label="fragment_animals"
+        tools:layout="@layout/fragment_animals" />
+</navigation>
